@@ -1,3 +1,9 @@
+      <% input = cookies.fetch(:visitor) %>
+      <% if input == nil %>
+      <h1>Welcome to Pelumi's world 😊 !</h1>
+      <% else %>
+      <h1>Welcome to Pelumi's world <%= input %> 😊 !</h1>
+      <% end %>    
 
 
 <dt>

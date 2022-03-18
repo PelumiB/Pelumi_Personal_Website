@@ -24,6 +24,7 @@ class PelumiController < ApplicationController
   end
   
   def bye
+    cookies.delete(:visitor)
     render({ :template => "pelumi/bye.html" })
   end
 end

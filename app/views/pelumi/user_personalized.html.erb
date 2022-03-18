@@ -6,11 +6,13 @@
 </form>
 
       <% @user = params.fetch("user") %>
+      <% cookies.store(:visitor, @user) %>
       <% if @user == nil %>
-      <h1>Welcome to Pelumi's world!</h1>
+      <h1>Welcome to Pelumi's world 😊 !</h1>
       <% else %>
-      <h1>Welcome to Pelumi's world <%= @user %> !</h1>
+      <h1>Welcome to Pelumi's world <%= @user %> 😊 !</h1>
       <% end %>
+      
 
 
 <img src="https://i.ibb.co/R2JhCcF/Pelumi.jpg">
